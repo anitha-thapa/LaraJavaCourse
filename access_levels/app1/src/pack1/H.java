@@ -9,8 +9,8 @@ class  H
 		this.i=k;
 	}
 	/*public void set(int i)
-	{                             output:0
-		i=i;                             0
+	{                               output:0
+		i=i;                               0
 	}*/
 	public int get()
 	{

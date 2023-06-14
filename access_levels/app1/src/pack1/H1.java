@@ -23,3 +23,4 @@ class I2
 		System.out.println(h1.get());
 	}
 }
+//output
