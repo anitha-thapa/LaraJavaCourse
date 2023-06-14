@@ -1,7 +1,6 @@
 git
 
-user name 'Surendarraj-M'
-pwd: M10muthu@
+
 git-scm /download
 right click in the project folder and select git-bash here
 crtl + scrollup for increasing the font
