@@ -26,4 +26,52 @@ same package non-sub class	  yes	      no	yes	  yes
 different package sub class	  no	      no	yes	  yes
 different package non-sub class   no	      no	no	  yes
 
-    ] 
+Access specifiers or Access modifiers
+-------------------------------------
+
+In java we have four access specifiers
+1.private(narrower)
+2.default(package, friendly)
+3.protected
+4.public(wider)
+
+
+1.private
+----------
+	In java, the 'private' ketword is an access modifier used to restrict the visibility(scope) of a class, method(member functions), field(data memebers, variables).
+	
+-private members scope(visibility) is limited to only that class, not outside.
+If we are trying to access it outside we will get CTE
+-constructors can also be declared with access modifiers
+-If we declare constructors as private then, we cannot able to call that constructor from the outside the declared class.
+-If we are calling the private constructor within the declared class itself then, its syntatically proper.
+-constructors are not inherited to the sub-classes but they are involving in the inheritance process.
+
+class  Q
+{
+	private Q()
+	{
+		System.out.println("Q()");
+	}
+}
+class R extends Q
+{
+}
+
+-In the above program, we will get error bcoz in each and every class there will be default constructor in the R class also that default constructor first statement(super()) is calling super class no arg constructor and which is private, so that is why the CTE
+
+-if we are not providing any access specifier for a constructor then it is the default access specifier
+-In case of SIB(static initilization block) and IIB(Instance Initialization block) we can't declared them with any access specifier.If we do we will get error.
+-If we have two different java files with disserent classes, and they are in the same folder, assume we are trying access one java file class within the other java file, compiler can able to easily identify that java file and compile that java file as well.
+Note: -If the class is declared with default or public.
+      -If we are trying to access the members of that class, those members must be default or public not private
+
+		THE ONLY SCOPE DEFAULT MEMBERS
+		------------------------------
+DEFAULT:
+-------
+	within the class, withn the sub class, within the same package non-sub class, within the indirect sub-classes of the same package.
+
+***************************Anywhere in the same package is possible************************
+
+
