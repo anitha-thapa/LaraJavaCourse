@@ -75,3 +75,17 @@ DEFAULT:
 ***************************Anywhere in the same package is possible************************
 
 
+-In software, rst----->reStructuredText
+-default members doesn't inherits to the different package sub-class
+-import lara.*;  --- . represents current directory & * all files under lara package
+-if we are using package statement and import statement then, first we have to use package declaration then only import declaration.
+-while importing a package if we mention '.*' that indicates that we are importing all the files from that particular package.
+eg: import lara.*;
+-but if we wanted to import only a particular class we can use the syntax import
+packageName.ClassName;
+eg: import lara.N;
+above type of import is recommended bcoz instead importing all the files that will  be the unnecessary load.
+-once we import a package in the files, that package or package members are available to the entire java file itself(where import statement is declared)
+
+Scenerio: If we are importing a particular class from a package then that class only will be considered for that entire 	  java file instead of already available class in the same package.
+	  If we are not using import statement then only it will be considering the current package class with the 	  same name while we ae refering

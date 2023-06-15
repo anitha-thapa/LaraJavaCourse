@@ -1,5 +1,5 @@
 package lara;
-class  F
+class  F  //class F is default
 {
 	void test1()
 	{

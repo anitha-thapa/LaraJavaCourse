@@ -18,6 +18,8 @@ Note : Do not keep any unnecessary files(movie,music files) it won't upload.
 - git add .  ==> adding all the files in that folder to the staging area.
 - git commit -m "message_goes_here" == commiting the changes to the files which
 are currently in the stageing area. (-m is the flag (represents message))
+[*git fetch origin, git merge origin/main]
+
 - git remote add origin "your remote repository address goes here" == making a 
 connection from your local repository to the remote repository.
 - git branch -M main == there are mainly two branches available by default which are
@@ -31,3 +33,5 @@ remote repository from the local repository.(-u stands for update)
 after this step for the first time you will get an authenticaion dialogue,you
 need to click on sign in with your browser.then automatically changes will be updated
 to your remote repository.
+
+
